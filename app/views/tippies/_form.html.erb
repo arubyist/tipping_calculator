@@ -1,0 +1,27 @@
+<%= form_for(tippy) do |f| %>
+  <% if tippy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tippy.errors.count, "error") %> prohibited this tippy from being saved:</h2>
+
+      <ul>
+      <% tippy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tip %>
+    <%= f.text_field :tip %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cost %>
+    <%= f.text_field :cost %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

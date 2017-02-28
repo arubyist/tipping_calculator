@@ -1,0 +1,2 @@
+module TippiesHelper
+end

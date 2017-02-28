@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tip:</strong>
+  <%= @tippy.tip %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @tippy.cost %>
+</p>
+
+<p>Total Cost:</strong>
+	<%= @tippy.calculation_of_total_cost %>
+</p>
+
+<%= link_to 'Edit', edit_tippy_path(@tippy) %> |
+<%= link_to 'Back', tippies_path %>
