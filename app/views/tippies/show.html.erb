@@ -1,18 +1,31 @@
-<p id="notice"><%= notice %></p>
+<br/><br/>
+<h1 class="text-center">Your Total Cost</h1>
+<br/><br />
 
-<p>
-  <strong>Tip:</strong>
-  <%= @tippy.tip %>
-</p>
 
-<p>
-  <strong>Cost:</strong>
-  <%= @tippy.cost %>
-</p>
-
-<p>Total Cost:</strong>
-	<%= @tippy.calculation_of_total_cost %>
-</p>
-
-<%= link_to 'Edit', edit_tippy_path(@tippy) %> |
-<%= link_to 'Back', tippies_path %>
+<table class="table table-striped">
+	<tr>
+		<td>
+			Cost of Your Meal:
+		</td>
+		<td>
+			 <%= @tippy.cost %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Tip You Picked:
+		</td>
+		<td>
+			 <%= @tippy.tip %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			The Total Cost:
+		</td>
+		<td>
+			<%= @tippy.calculation_of_total_cost %>
+		</td>
+	</tr>
+</table>
