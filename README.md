@@ -1,24 +1,3 @@
-# README
+# Tip Calculator	
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Meant to be a very basic tipping calculator where you put in your cost of the meal and choose the percentage you want to tip, and it will show you the total cost 
