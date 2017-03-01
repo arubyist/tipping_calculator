@@ -9,7 +9,7 @@
 			Cost of Your Meal:
 		</td>
 		<td>
-			 <%= @tippy.cost %>
+			 <%= number_to_currency(@tippy.cost) %>
 		</td>
 	</tr>
 	<tr>
@@ -17,7 +17,7 @@
 			Tip You Picked:
 		</td>
 		<td>
-			 <%= @tippy.tip %>
+			 <%= number_to_percentage(@tippy.tip * 100, format: "%n%", precision: 0) %>
 		</td>
 	</tr>
 	<tr>

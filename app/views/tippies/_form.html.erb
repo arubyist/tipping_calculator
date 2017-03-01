@@ -19,9 +19,8 @@
 
   <div class="field form-group">
     <%= f.label :pick_your_tip, class: "control-label" %>
-    <%= f.text_field :tip, class: "form-control" %>
+    <%= f.select(:tip, Tippy::TIP_CHOICES, class: "form-control")  %>
   </div>
-
 
 
   <div class="actions">
