@@ -9,7 +9,7 @@
 			Cost of Your Meal:
 		</td>
 		<td>
-			 <%= number_to_currency(@tippy.cost) %>
+			<%= humanized_money_with_symbol @tippy.cost %>
 		</td>
 	</tr>
 	<tr>
@@ -25,7 +25,12 @@
 			The Total Cost:
 		</td>
 		<td>
-			<%= number_to_currency(@tippy.calculation_of_total_cost) %>
+			<%= humanized_money_with_symbol @tippy.calculation_of_total_cost %>
 		</td>
 	</tr>
 </table>
+
+
+<%= link_to 'New Tippy', new_tippy_path %>
+
+<%= link_to "Previous Tips", tippies_path %>

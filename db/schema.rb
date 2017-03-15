@@ -10,16 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170301051956) do
+ActiveRecord::Schema.define(version: 20170310080720) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "tippies", force: :cascade do |t|
-    t.float    "tip",        null: false
-    t.decimal  "cost",       null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.float    "tip"
+    t.decimal  "cost"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.integer  "cost_cents",    default: 0
+    t.string   "cost_currency", default: "USD", null: false
+    t.integer  "tip_cents",     default: 0
+    t.string   "tip_currency",  default: "USD", null: false
   end
 
 end

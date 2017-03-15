@@ -2,9 +2,10 @@
 
 <h1>Tippies</h1>
 
-<table>
+<table cellpadding="20">
   <thead>
     <tr>
+
       <th>Tip</th>
       <th>Cost</th>
       <th>Total</th>
@@ -15,9 +16,9 @@
   <tbody>
     <% @tippies.each do |tippy| %>
       <tr>
-        <td><%= tippy.tip %></td>
-        <td><%= tippy.cost %></td>
-        <td><%= tippy.calculation_of_total_cost %></td>
+        <td><%= number_to_percentage(tippy.tip * 100, format: "%n%", precision: 0) %></td>
+        <td><%= humanized_money_with_symbol tippy.cost %></td>
+        <td><%= humanized_money_with_symbol tippy.calculation_of_total_cost %></td>
         <td><%= link_to 'Show', tippy %></td>
         <td><%= link_to 'Edit', edit_tippy_path(tippy) %></td>
         <td><%= link_to 'Destroy', tippy, method: :delete, data: { confirm: 'Are you sure?' } %></td>

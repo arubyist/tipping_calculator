@@ -12,3 +12,33 @@
  *
  */
 @import "bootstrap";
+
+body {
+	  background-image: url('semenov_mt2.jpg');
+    color: #fff;
+}
+
+.texty-line {
+	   background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 10px 10px;
+}
+
+#tippy_tip {
+	padding: 5px 10px;
+	background-color: #025aa5;
+	color: #fff;
+}
+
+#error_explanation {
+	 background:rgba(255,255,255,0.5);
+	 padding:20px;
+	 margin:20px 0px;
+	 border-radius: 25px;
+}
